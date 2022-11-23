@@ -1,13 +1,15 @@
 package org.generation.italy.christmas;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 public class Main {
 	
@@ -37,30 +39,28 @@ public class Main {
 			System.out.println(str);
 		}
 		
-		
-		*/
 		//set
 		
-		Set<String> stringaSet = new HashSet<>();
+		Set<String> stringaSet = new TreeSet<String>();
 		System.out.print("inserisci una parola e ti verra restituita lettera"
 				+ " per lettera senza ripetizioni: ");
 		String word = in.nextLine();
 		
-
 		for (int i = 0; i < word.length(); i++) {
 			stringaSet.add(Character.toString(word.charAt(i)));
 		}
+		
 		System.out.println(stringaSet);
 		
-		
+		*/
 		//map
 		
-		Map<Integer, String> map = new HashMap<>();
+		TreeMap< String, Integer> map = new TreeMap<String, Integer >();
 		System.out.print("inserisci una parola e ti verra restituita lettera per lettera: ");
 		String wordForMap = in.nextLine();
 		
 		for (int i = 0; i < wordForMap.length(); i++) {
-			map.put(i, Character.toString(wordForMap.charAt(i)));
+			map.put( Character.toString(wordForMap.charAt(i)), i);
 		}
 		System.out.println(map);
 		in.close();
