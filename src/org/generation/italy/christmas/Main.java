@@ -15,7 +15,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		/*
+		
 		int keepGoing = 1;
 		
 		//Collection
@@ -52,7 +52,7 @@ public class Main {
 		
 		System.out.println(stringaSet);
 		
-		*/
+		
 		//map
 		
 		TreeMap< String, Integer> map = new TreeMap<String, Integer >();
